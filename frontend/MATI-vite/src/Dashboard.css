@@ -1,0 +1,112 @@
+
+body{
+    margin: 0;
+    padding: 0  
+    
+}
+
+.Body{
+    display: flex;
+    min-height:80vh;
+    background-color: hsl(0, 0%, 100%);
+    transition: margin-left 0.3s ease;
+}
+
+.body{
+  padding: 5px;
+}
+.Header{
+    padding: 0.5rem;
+    height: 5rem;
+    background-color: #098d5a;
+    border-radius: 0.3rem;
+}
+
+.Footer{
+    background-color: #34495e; /* Darker background color */
+    color: #ecf0f1; /* Lighter text color */
+    padding: 10px 0;
+    text-align: center;
+   
+}
+
+.Sidebar{
+    height: fit-content;
+    background-color: #2c3e50;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+}
+
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 2px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.sidebar.collapsed + .Body {
+    margin-left: 60px; 
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+.heading h3 {
+    margin: 0; 
+}
+
+.Time {
+    margin-left: auto;
+    font-weight: bold; 
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
